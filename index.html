@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="wrapper">
+        
+        <h1>Weather app</h1>
+
+        <div class="tabs">
+            <div class="tab1" your-weather id="weather-user">
+                <p>Your Weather</p>
+            </div>
+            <div class="tab2" search-weather id="weather-searched">
+                <p>Search Weather</p>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>Loading...</p>
+        </div>
+        
+
+        <div class="weather-tab-inside">
+
+
+            <div class="grant-location grant-location-act" grantLocation>
+                <img src="acc/location-icon.png" alt="locationIcon" class="locationIcon">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button id="grant-button" class="grant-button">Grant Access</button>
+            </div>
+
+            <div class="search-weather search-weather-act" searchWeather>
+                <input type="text" placeholder="search for city" class="input-tag">
+                <div class="search-button-input">
+                    <button class="search-button"></button>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="show-weather show-weather-act">
+            <div class="city-name-flag">
+                <p city-name></p>
+                <img city-flag>
+            </div>
+
+            
+            <p weather-type></p>
+            
+            <img weatherType-icon>
+            
+            <p weather-temp></p>
+        </div>
+
+        <div class="cards cards-act">
+            
+            <div class="weather-parameter">
+                <img src="acc/wind.png">
+                <p>windspeed</p>
+                <p weather-windSpeed></p>
+            </div>
+
+            
+            <div class="weather-parameter">
+                <img src="acc/humidity.png" >
+                <p>humidity</p>
+                <p weather-humidity></p>
+            </div>
+
+            
+            <div class="weather-parameter">
+                <img src= "acc/clouds.png">
+                <p>Clouds</p>
+                <p weather-cloudiness></p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

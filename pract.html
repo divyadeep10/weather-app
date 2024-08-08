@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .content1, .content2 {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+
+        .content1.active {
+            display: block;
+            background-color: blueviolet;
+        }
+
+        .content2.active {
+            display: block;
+            background-color: rgb(43, 226, 110);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p onclick="toggleContent('content1')">content 1</p>
+    </div>
+
+    <div class="div2">
+        <p onclick="toggleContent('content2')">content 2</p>
+    </div>
+
+    <div class="content1">This is content 1</div>
+    <div class="content2">This is content 2</div>
+
+    <script>
+        function toggleContent(contentClass) {
+            let content1 = document.querySelector('.content1');
+            let content2 = document.querySelector('.content2');
+
+            if (contentClass === 'content1') {
+                if (content1.classList.contains('active')) {
+                    content1.classList.remove('active');
+                } else {
+                    content1.classList.add('active');
+                    content2.classList.remove('active');
+                }
+            } else if (contentClass === 'content2') {
+                if (content2.classList.contains('active')) {
+                    content2.classList.remove('active');
+                } else {
+                    content2.classList.add('active');
+                    content1.classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

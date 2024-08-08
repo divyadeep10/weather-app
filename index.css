@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);;
+}
+
+h1{
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 15px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 3rem;
+}
+
+.tab1{
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tab2{
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tab.selected-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.weather-tab-inside{
+    margin-top: 3rem;
+}
+
+.grant-location{
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
+.locationIcon{
+    height: 9rem;
+    width: 9rem;
+}
+
+.grant-location p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+}
+
+.grant-button{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    
+}
+
+.grant-location-act.active{
+    display: flex;
+}
+
+.search-weather{
+    width:90%;
+    max-width:550px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px; 
+    margin-bottom: 3rem;
+    display: none;
+}
+
+.search-weather input {
+    width: calc(100% - 80px);
+    height:40px;
+    padding: 0 20px;
+    background-color:rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+
+.search-weather input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-weather img{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    left: .6rem;
+    bottom: 2rem;
+}
+
+.search-weather button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-top: 1.8rem;
+    
+}
+
+
+
+.search-weather-act.active{
+    display: flex;
+}
+
+
+
+.show-weather {
+    display: none;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto; /* Center the entire container */
+    text-align: center; /* Center text within the container */
+}
+
+.show-weather-act.active{
+    display: flex;
+}
+
+.material-symbols-outlined{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    left: .6rem;
+    bottom: 2rem;
+}
+
+.search-button-input button{
+    background-color: var(--colorDark2);
+}
+
+
+
+.city-name-flag {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center elements horizontally */
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center text within the container */
+}
+
+.city-name-flag p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.city-name-flag img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.cards{
+    width:90%;
+    display: none;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.cards-act.active{
+    display: flex;
+}
+
+.weather-parameter{
+    width:30%;
+    max-width:200px;
+    background-color: rgba(219, 226, 239, 0.5);;
+    border-radius: 5px;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px 0;
+    /* justify-content: space-between; */
+    align-items: center; 
+}
+
+.weather-parameter img{
+    width:50px;
+    height:50px;
+}
+
+.loading {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+
+
+
+
+
+
+
+
+
