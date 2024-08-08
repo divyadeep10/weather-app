@@ -15,19 +15,22 @@ This project is a web application built with HTML, CSS, and JavaScript that disp
 * style.css: Contains CSS styles for formatting the layout, elements, and visual presentation.
 * index.js: Houses JavaScript code for handling user interactions, dynamic content updates, and fetching weather data using the Fetch API.
 * acc: Directory containing any additional assets, such as images used in the project.
+
 ## Installation:
 
 Prerequisites:
 
-A code editor or IDE (e.g., Visual Studio Code, Sublime Text)
-A basic understanding of HTML, CSS, and JavaScript
-A web browser (e.g., Chrome, Firefox, Safari)
+* A code editor or IDE (e.g., Visual Studio Code, Sublime Text)
+* A basic understanding of HTML, CSS, and JavaScript
+* A web browser (e.g., Chrome, Firefox, Safari)
+
 Steps:
 
 Clone the repository:
 
-Bash
-git clone https://<your-github-username>/<your-repository-name>.git
+```bash
+git clone https://github.com/divyadeep10/weather-app.git
+```
 Use code with caution.
 
 Replace <your-github-username> with your actual GitHub username and <your-repository-name> with the name of your weather app repository.
@@ -44,6 +47,12 @@ Search for a City: If you prefer to view weather for a specific city, click on t
 
 View Weather Information: Based on your location or city search, the app will fetch weather data from the OpenWeatherMap API and display relevant details like temperature, description, wind speed, humidity, and cloudiness.
 
+## demo:
+
+Visit the live site to explore the project.
+
+https://divyadeep10.github.io/weather-app/
+
 ## Additional Notes:
 
 You will need to obtain an API key from OpenWeatherMap to use their weather data service.
@@ -51,3 +60,10 @@ You will need to obtain an API key from OpenWeatherMap to use their weather data
 ## Contributing:
 
 If you have any suggestions or bug fixes, please feel free to create a pull request on GitHub.
+
+## Contact
+
+Feel free to reach out for any questions or collaborations:
+
+Email: divyadeepsundriyal@gmail.com
+LinkedIn: www.linkedin.com/in/divyadeep-sundriyal-94b3b2260
