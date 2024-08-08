@@ -65,5 +65,5 @@ If you have any suggestions or bug fixes, please feel free to create a pull requ
 
 Feel free to reach out for any questions or collaborations:
 
-Email: divyadeepsundriyal@gmail.com
-LinkedIn: www.linkedin.com/in/divyadeep-sundriyal-94b3b2260
+- Email: divyadeepsundriyal@gmail.com  
+- LinkedIn: www.linkedin.com/in/divyadeep-sundriyal-94b3b2260
