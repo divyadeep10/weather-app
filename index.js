@@ -105,12 +105,15 @@ function handleGrantLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                const { latitude, longitude } = position.coords;
+                const { latitude, longitude } = position.coords;   // const latitude = position.coords.latitude;
+                                                                   //const longitude = position.coords.longitude;
+                
                 fetchWeather(latitude, longitude);
 
                 grantLocationDiv.classList.remove('active');
-                showWeatherDiv.classList.add('active');
-                cardsDiv.classList.add('active');
+                // showWeatherDiv.classList.add('active');
+                // cardsDiv.classList.add('active');
+
             },
             (error) => {
                 console.error('Error getting location:', error);
@@ -148,6 +151,14 @@ grantButton.addEventListener('click', handleGrantLocation);
 
 // Adding event listener to the search button
 searchButtonDiv.addEventListener('click', handleSearchWeather);
+
+
+const searchButtonEnter = document.querySelector('.search-button')
+searchInput.addEventListener('keydown' , function(event){
+    if(event.key === 'Enter'){
+        handleSearchWeather();
+    }
+});
 
 // Initial display
 tabWeather('yourWeather');
